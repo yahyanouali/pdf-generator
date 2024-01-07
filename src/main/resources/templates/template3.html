@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{reportTitle}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin-top: 120px; margin-left: 60px; padding-bottom: 200px}
+        h1 { color: #333366; }
+        table { width: 100%; border-collapse: collapse;}
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .main-content { padding-bottom: 200px;}
+    </style>
+</head>
+<body>
+<div class="main-content">
+<h1>{reportTitle}</h1>
+<p>Date: {date}</p>
+<img src="{logoUrl}" alt="Company Logo" style="height: 60px;">
+
+<h2>Executive Summary</h2>
+<p>{executiveSummary}</p>
+
+<h2>Details</h2>
+<table>
+    <tr>
+        <th>Item</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    {#for item in items}
+        <tr>
+        <td>{item.name}</td>
+        <td>{item.description}</td>
+        <td>{item.quantity}</td>
+        <td>${item.price}</td>
+        </tr>
+    {/for}
+</table>
+
+<h2>Conclusion</h2>
+<p>{conclusion}</p>
+
+</div>
+</body>
+</html>
