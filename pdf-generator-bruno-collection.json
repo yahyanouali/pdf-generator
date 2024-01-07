@@ -1,0 +1,175 @@
+{
+  "name": "pdf-generator",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "generate PDF template1",
+      "seq": 3,
+      "request": {
+        "url": "http://localhost:8080/pdf?converter=pdfbox&template=template1",
+        "method": "POST",
+        "headers": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"title\": \"Titre de ma page\",\n  \"message\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit viverra primis, potenti ornare pretium. Quisque tempus dui diam nostra id ad purus eleifend, est pulvinar maecenas ligula sagittis venenatis. Ullamcorper pulvinar tempus sodales tristique sagittis per magnis, porttitor metus primis curae a auctor risus sociosqu, inceptos aliquet dignissim ultricies et varius. Cras sociosqu nunc nulla feugiat molestie laoreet neque pretium id dictumst, blandit accumsan diam facilisis tempus scelerisque eget aptent vel praesent sem, elementum inceptos viverra conubia phasellus parturient duis rutrum curae. Metus sagittis nam eros nec maecenas senectus condimentum mus integer posuere sociis quam, duis elementum nibh lacus semper enim lobortis et platea quisque.\",\n  \"date\": \"2024-01-06\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": [
+          {
+            "name": "converter",
+            "value": "pdfbox",
+            "enabled": true
+          },
+          {
+            "name": "template",
+            "value": "template1",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "http",
+      "name": "generate PDF template2",
+      "seq": 2,
+      "request": {
+        "url": "http://localhost:8080/pdf?converter=openpdf&template=template2",
+        "method": "POST",
+        "headers": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"pageTitle\": \"Cartoons\",\n  \"username\": \"spongeBob\",\n  \"role\": \"Cartoon actor\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": [
+          {
+            "name": "converter",
+            "value": "openpdf",
+            "enabled": true
+          },
+          {
+            "name": "template",
+            "value": "template2",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "http",
+      "name": "generate PDF template3",
+      "seq": 3,
+      "request": {
+        "url": "http://localhost:8080/pdf?converter=openpdf&template=template3",
+        "method": "POST",
+        "headers": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"reportTitle\": \"Monthly Sales Report\",\n  \"date\": \"2024-01-15\",\n  \"logoUrl\": \"https://example.com/logo.png\",\n  \"executiveSummary\": \"This report provides an overview of the sales performance for the month.\",\n  \"items\": [\n    {\n      \"name\": \"Product A\",\n      \"description\": \"Description of Product A\",\n      \"quantity\": 100,\n      \"price\": \"20.00\"\n    },\n    {\n      \"name\": \"Product B\",\n      \"description\": \"Description of Product B\",\n      \"quantity\": 150,\n      \"price\": \"30.00\"\n    },\n    {\n      \"name\": \"Product C\",\n      \"description\": \"Description of Product C\",\n      \"quantity\": 90,\n      \"price\": \"33.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    },\n    {\n      \"name\": \"Product D\",\n      \"description\": \"Description of Product D\",\n      \"quantity\": 10,\n      \"price\": \"5.00\"\n    }\n\n  ],\n  \"conclusion\": \"Overall, the sales performance for the month was above expectations.\"\n}\n",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": [
+          {
+            "name": "converter",
+            "value": "openpdf",
+            "enabled": true
+          },
+          {
+            "name": "template",
+            "value": "template3",
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "http",
+      "name": "generate PDF template4",
+      "seq": 4,
+      "request": {
+        "url": "http://localhost:8080/pdf?converter=pdfbox&template=template4",
+        "method": "POST",
+        "headers": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"eventName\": \"Annual Gala\",\n  \"eventDate\": \"2024-05-20\",\n  \"eventLocation\": \"Grand Ballroom, Star Hotel\",\n  \"eventDescription\": \"Join us for an evening of entertainment and celebration at our annual gala.\",\n  \"imageUrl\": \"https://example.com/event-image.jpg\",\n  \"rsvpDate\": \"2024-05-10\"\n}\n",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": [
+          {
+            "name": "converter",
+            "value": "pdfbox",
+            "enabled": true
+          },
+          {
+            "name": "template",
+            "value": "template4",
+            "enabled": true
+          }
+        ]
+      }
+    }
+  ],
+  "environments": []
+}
